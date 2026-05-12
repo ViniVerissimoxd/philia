@@ -52,9 +52,7 @@ function startPhase3(){
     obstacle.style.top =
       "-100px";
 
-    game.appendChild(
-      obstacle
-    );
+    game.appendChild(obstacle);
 
     let y = -100;
 
@@ -81,25 +79,23 @@ function startPhase3(){
 
   setInterval(() => {
 
-    const brocoli =
+    const needle =
       document.createElement("div");
 
-    brocoli.className =
-      "brocoli";
+    needle.className =
+      "needle";
 
-    brocoli.innerHTML =
+    needle.innerHTML =
       "🥦";
 
-    brocoli.style.left =
+    needle.style.left =
       Math.random() *
       window.innerWidth + "px";
 
-    brocoli.style.top =
+    needle.style.top =
       "-100px";
 
-    game.appendChild(
-      needle
-    );
+    game.appendChild(needle);
 
     let y = -100;
 
@@ -107,11 +103,11 @@ function startPhase3(){
 
       y += 5;
 
-      brocoli.style.top =
+      needle.style.top =
         y + "px";
 
       const r1 =
-        brocoli.getBoundingClientRect();
+        needle.getBoundingClientRect();
 
       const r2 =
         player.getBoundingClientRect();
@@ -123,15 +119,15 @@ function startPhase3(){
         r1.bottom > r2.top
       ){
 
-        brocoli.remove();
+        needle.remove();
 
         progress++;
 
-player.style.filter =
-  `drop-shadow(0 0 ${progress * 3}px lime)`;
+        player.style.filter =
+          `drop-shadow(0 0 ${progress * 3}px lime)`;
 
-player.style.transform =
-  `scale(${1 + progress/20})`;
+        player.style.transform =
+          `scale(${1 + progress/20})`;
 
         if(progress >= 10){
 
@@ -155,7 +151,7 @@ player.style.transform =
           fall
         );
       }else{
-        brocoli.remove();
+        needle.remove();
       }
     }
 
