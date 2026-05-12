@@ -1,4 +1,5 @@
-*{
+
+  *{
   margin:0;
   padding:0;
   box-sizing:border-box;
@@ -10,10 +11,9 @@ body{
   font-family:Arial,sans-serif;
 }
 
-/* TIMELINE */
-
 .timeline{
   width:100%;
+
   min-height:200vh;
 
   padding:50px 0;
@@ -21,6 +21,7 @@ body{
   display:flex;
   flex-direction:column;
   align-items:center;
+
   gap:80px;
 }
 
@@ -33,14 +34,12 @@ body{
 
   border-radius:20px;
 
-  filter:grayscale(100%);
-
   border:3px solid white;
+
+  filter:grayscale(100%);
 
   transition:.4s;
 }
-
-/* FINAL */
 
 .final-section{
   margin-top:200px;
@@ -57,9 +56,9 @@ body{
 
   border-radius:20px;
 
-  filter:grayscale(100%);
-
   border:3px solid white;
+
+  filter:grayscale(100%);
 
   opacity:.5;
 
@@ -68,12 +67,11 @@ body{
 
 .hearts{
   display:flex;
+
   gap:20px;
 
   font-size:50px;
 }
-
-/* GAME */
 
 .game-body{
   width:100vw;
@@ -89,6 +87,7 @@ body{
 #gameContainer{
   width:100%;
   height:100%;
+
   position:relative;
 }
 
@@ -102,7 +101,7 @@ body{
 
   color:white;
 
-  font-size:32px;
+  font-size:35px;
 
   text-decoration:none;
 
@@ -111,17 +110,15 @@ body{
   z-index:999;
 }
 
-/* FASE 1 */
-
 .phase1-heart{
   position:absolute;
 
   font-size:70px;
 
   touch-action:none;
-}
 
-/* FASE 2 */
+  user-select:none;
+}
 
 .big-heart{
   position:absolute;
@@ -131,7 +128,9 @@ body{
 
   transform:translate(-50%,-50%);
 
-  font-size:140px;
+  font-size:150px;
+
+  opacity:.3;
 }
 
 .small-heart{
@@ -140,9 +139,9 @@ body{
   font-size:40px;
 
   touch-action:none;
-}
 
-/* FASE 3 */
+  user-select:none;
+}
 
 .player-heart{
   position:absolute;
@@ -153,18 +152,22 @@ body{
   font-size:70px;
 
   touch-action:none;
+
+  user-select:none;
+
+  transition:.2s;
 }
 
 .obstacle{
   position:absolute;
 
-  font-size:50px;
+  font-size:55px;
 }
 
 .needle{
   position:absolute;
 
-  font-size:40px;
+  font-size:45px;
 
-  filter:drop-shadow(0 0 10px cyan);
+  filter:drop-shadow(0 0 10px lime);
 }
