@@ -57,8 +57,7 @@ function update(){
 
     finalPhoto.onclick = () => {
 
-      window.location.href =
-        "final.html";
+      alert("Parabéns ❤️");
     };
   }
 }
