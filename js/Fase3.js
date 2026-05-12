@@ -127,8 +127,11 @@ function startPhase3(){
 
         progress++;
 
-        player.style.filter =
-          `brightness(${1 + progress/5})`;
+player.style.filter =
+  `drop-shadow(0 0 ${progress * 3}px lime)`;
+
+player.style.transform =
+  `scale(${1 + progress/20})`;
 
         if(progress >= 10){
 
