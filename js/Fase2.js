@@ -1,4 +1,4 @@
-function startPhase2(){
+    function startPhase2(){
 
   const game =
     document.getElementById(
@@ -13,7 +13,8 @@ function startPhase2(){
   const big =
     document.createElement("div");
 
-  big.className = "big-heart";
+  big.className =
+    "big-heart";
 
   big.innerHTML = "🤍";
 
@@ -69,8 +70,7 @@ function startPhase2(){
 
           collected++;
 
-          big.innerHTML =
-            "❤️";
+          big.innerHTML = "❤️";
 
           big.style.opacity =
             collected / 10;
@@ -89,4 +89,4 @@ function startPhase2(){
       }
     );
   }
-}
+    }
